@@ -25,7 +25,7 @@ function Button() {
           <button onClick={getLoad}>Click</button>
         <h4>{load}</h4>
       </div>
-
+      
       <div className="button_two">
         <h2>Button 2</h2>
           <button onClick={getName}>Click</button>

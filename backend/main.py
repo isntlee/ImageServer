@@ -5,6 +5,7 @@ from pydicom import dcmread
 
 app = FastAPI()
 
+
 @app.get("/button_one")
 async def server_read():
     commands = ["uptime", "date"]
@@ -27,6 +28,7 @@ async def server_read():
             values.append(" -- " + date)
 
     return values
+
 
 @app.get("/button_two")
 async def file_read():
